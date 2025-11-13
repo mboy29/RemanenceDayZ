@@ -2,9 +2,77 @@
 > app@0.0.1 dev /Users/melodyboy/Desktop/Perso/Remanence/website/apps/app
 > vite dev
 
-[2m17:02:31[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Forced re-optimization of dependencies
 
-  [32m[1mVITE[22m v7.2.2[39m  [2mready in [0m[1m701[22m[2m[0m ms[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v7.2.2[39m  [2mready in [0m[1m750[22m[2m[0m ms[22m
 
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
@@ -39,7 +107,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:04:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/app.html[22m
 
 
 
@@ -67,7 +134,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:04:30[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/app.html[22m [33m(x2)[39m
 
 
 
@@ -83,6 +149,7 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
+[1;1H[0J[2m17:18:17[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/routes/+layout.svelte, /src/app.css[22m
 
 
 
@@ -95,7 +162,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:04:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/routes/+layout.svelte, /src/app.css[22m
 
 
 
@@ -123,7 +189,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:04:37[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+layout.svelte[22m
 
 
 
@@ -151,10 +216,10 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:02[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/app.html[22m
 
 
 
+[1;1H[0J[2m17:18:17[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+layout.svelte[22m
 
 
 
@@ -179,7 +244,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:02[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/app.html[22m [33m(x2)[39m
 
 
 
@@ -207,7 +271,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:02[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2m.svelte-kit/generated/server/internal.js[22m
 
 
 
@@ -226,6 +289,7 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
+[1;1H[0J[2m17:18:21[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/routes/+layout.svelte, /src/app.css[22m
 
 
 
@@ -235,7 +299,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:03[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/app.html[22m
 
 
 
@@ -263,7 +326,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:03[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/app.html[22m [33m(x2)[39m
 
 
 
@@ -291,13 +353,13 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:03[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2m.svelte-kit/generated/server/internal.js[22m
 
 
 
 
 
 
+[1;1H[0J[2m17:18:21[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+layout.svelte[22m
 
 
 
@@ -319,7 +381,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/app.html[22m
 
 
 
@@ -347,7 +408,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:23[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/app.html[22m [33m(x2)[39m
 
 
 
@@ -369,13 +429,13 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
+[1;1H[0J[2m17:18:36[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+page.svelte[22m
 
 
 
 
 
 
-[1;1H[0J[2m17:05:23[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2m.svelte-kit/generated/server/internal.js[22m
 
 
 
@@ -403,7 +463,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/app.html[22m
 
 
 
@@ -431,7 +490,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:47[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/app.html[22m [33m(x2)[39m
 
 
 
@@ -441,6 +499,7 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
+[1;1H[0J[2m17:18:38[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+page.svelte[22m [33m(x2)[39m
 
 
 
@@ -459,7 +518,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/app.html[22m [33m(x3)[39m
 
 
 
@@ -487,7 +545,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:05:49[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/app.html[22m [33m(x4)[39m
 
 
 
@@ -512,10 +569,10 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
+[1;1H[0J[2m17:18:41[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+page.svelte[22m [33m(x3)[39m
 
 
 
-[1;1H[0J[2m17:05:49[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2m.svelte-kit/generated/server/internal.js[22m
 
 
 
@@ -543,7 +600,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:06:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/routes/+page.svelte, /src/app.css[22m
 
 
 
@@ -571,7 +627,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:06:57[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+page.svelte[22m
 
 
 
@@ -584,6 +639,7 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
+[1;1H[0J[2m17:18:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/routes/+page.svelte, /src/app.css[22m
 
 
 
@@ -599,7 +655,6 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:06:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/routes/+page.svelte, /src/app.css[22m
 
 
 
@@ -627,4 +682,253 @@ Google Chrome is requesting /.well-known/appspecific/com.chrome.devtools.json to
 
 
 
-[1;1H[0J[2m17:06:59[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+page.svelte[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m17:18:43[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/routes/+page.svelte[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m17:20:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m17:20:27[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/app.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m17:20:27[22m [31m[1m[vite][22m[39m [31mInternal server error: Can't resolve 'tw-animate-css' in '/Users/melodyboy/Desktop/Perso/Remanence/website/apps/app/src'[39m
+  Plugin: [35m@tailwindcss/vite:generate:serve[39m
+  File: [36m/Users/melodyboy/Desktop/Perso/Remanence/website/apps/app/src/app.css[39m
+      at finishWithoutResolve (/Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/enhanced-resolve@5.18.3/node_modules/enhanced-resolve/lib/Resolver.js:565:18)
+      at /Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/enhanced-resolve@5.18.3/node_modules/enhanced-resolve/lib/Resolver.js:657:14
+      at /Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/enhanced-resolve@5.18.3/node_modules/enhanced-resolve/lib/Resolver.js:718:5
+      at eval (eval at create (/Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/tapable@2.2.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at /Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/enhanced-resolve@5.18.3/node_modules/enhanced-resolve/lib/Resolver.js:718:5
+      at eval (eval at create (/Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/tapable@2.2.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at /Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/enhanced-resolve@5.18.3/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
+      at /Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/enhanced-resolve@5.18.3/node_modules/enhanced-resolve/lib/Resolver.js:718:5
+      at eval (eval at create (/Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/tapable@2.2.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at /Users/melodyboy/Desktop/Perso/Remanence/website/node_modules/.pnpm/enhanced-resolve@5.18.3/node_modules/enhanced-resolve/lib/Resolver.js:718:5
