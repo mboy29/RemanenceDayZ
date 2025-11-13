@@ -1,0 +1,35 @@
+{
+  "name": "@repo/shared",
+  "version": "0.0.0",
+  "type": "module",
+  "module": "index.ts",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsc --watch --preserveWatchOutput",
+    "build:back": "tsc",
+    "build:front": "tsc"
+  },
+  "imports": {
+    "#*": "./src/*"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "svelte": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./src/*.ts",
+      "svelte": "./src/*.svelte",
+      "default": "./dist/*.js"
+    }
+  },
+  "dependencies": {
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@vinejs/vine": "^3.0.0",
+    "validator": "^13.12.0",
+    "@types/validator": "^13.12.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".svelte-kit/**", ".vercel/**", "./build/**"]
+    },
+    "build:back": {
+      "dependsOn": ["^build:back"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".svelte-kit/**", ".vercel/**", "./build/**"]
+    },
+    "build:front": {
+      "dependsOn": ["^build:front"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".svelte-kit/**", ".vercel/**", "./build/**"]
+    },
+    "lint": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

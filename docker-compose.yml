@@ -1,0 +1,25 @@
+services:
+  remanecence-api-db:
+    container_name: remanecence-api-db
+    image: postgres:14.5
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    ports:
+      - ${POSTGRES_PORT}:1110
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - remanecence-api-db:/var/lib/postgresql/data
+
+volumes:
+  remanecence-api-db:
+    driver: local
+
+networks:
+  default:
+    driver: bridge

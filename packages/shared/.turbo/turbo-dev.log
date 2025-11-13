@@ -1,0 +1,8 @@
+
+> @repo/shared@0.0.0 dev /Users/melodyboy/Desktop/Perso/Remanence/website/packages/shared
+> tsc --watch --preserveWatchOutput
+
+[[90m17:02:31[0m] Starting compilation in watch mode...
+
+[[90m17:02:31[0m] Found 0 errors. Watching for file changes.
+

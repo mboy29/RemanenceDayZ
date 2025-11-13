@@ -1,0 +1,41 @@
+{
+  "name": "soipakon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "build:back": "turbo run build:back",
+    "build:front": "turbo run build:front",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.9.0",
+  "private": true,
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "ignoredBuiltDependencies": [
+      "@tailwindcss/oxide"
+    ]
+  },
+  "dependencies": {
+    "@types/qrcode": "^1.5.5",
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
