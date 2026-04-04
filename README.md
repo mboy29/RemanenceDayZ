@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# Rémanence
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site web du serveur **Rémanence** : présentation, règlement, factions et blog de développement. Application **React** servie par **Vite**, avec **TypeScript**, **Tailwind CSS v4** et **React Router**.
 
-Currently, two official plugins are available:
+## Prérequis
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Node.js](https://nodejs.org/) **20 LTS** ou plus récent (recommandé)
+- Un gestionnaire de paquets : **npm** (inclus avec Node), ou **pnpm** / **yarn** si vous les utilisez déjà
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+À la racine du dossier `remanence` :
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Avec pnpm :
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+pnpm install
 ```
+
+## Commandes
+
+| Commande        | Description |
+|-----------------|-------------|
+| `npm run dev`   | Lance le serveur de développement Vite (hot reload). URL affichée dans le terminal (souvent `http://localhost:5173`). |
+| `npm run build` | Vérifie le typage TypeScript (`tsc -b`) puis génère le build de production dans `dist/`. |
+| `npm run preview` | Sert le contenu de `dist/` en local pour tester le build avant déploiement. |
+| `npm run lint`  | Exécute ESLint sur le projet. |
+
+Exemple de flux habituel :
+
+```bash
+cd remanence
+npm install
+npm run dev
+```
+
+## Structure du dépôt (aperçu)
+
+- `src/main.tsx` — point d’entrée React
+- `src/app/App.tsx` — fournisseur du routeur
+- `src/app/routes/` — configuration des routes (`routes.config.ts`, `router.tsx`)
+- `src/app/pages/` — pages (`HomePage`, `RulesPage`, `FactionsPage`, `DevBlog`, …)
+- `src/app/components/` — composants UI et blocs par page (règles, factions, navbar, etc.)
+- `src/lib/` — utilitaires et petites briques partagées (ex. nom du serveur)
+- `public/` — assets statiques servis tels quels
+
+Routes principales déclarées dans `routes.config.ts` :
+
+- `/` — accueil  
+- `/regles` — règlement  
+- `/factions` — factions  
+- `/dev-blog` — blog de développement  
+
+## Déploiement
+
+Après `npm run build`, déployez le dossier **`dist/`** sur l’hébergement statique de votre choix (Netlify, Vercel, Nginx, etc.). Pour les apps en **SPA** avec React Router, configurez une **fallback** vers `index.html` pour les chemins profonds (ex. `/regles`).
+
+## Licence
+
+Projet privé (`"private": true` dans `package.json`). Adapter selon votre politique.
