@@ -1,6 +1,16 @@
+/**
+ * @file HeroSection.tsx
+ * @description Fond de hero réutilisable : image plein écran avec léger parallax souris et overlays.
+ */
+
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
+/**
+ * @param imageUrl - URL de l’image de fond.
+ * @param imageAlt - Texte alternatif pour l’`<img>`.
+ * @returns {JSX.Element} Calque animé positionné en `absolute inset-0`.
+ */
 export function HeroBackground({ imageUrl, imageAlt }: { imageUrl: string, imageAlt: string }) {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   

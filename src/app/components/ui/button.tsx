@@ -1,3 +1,8 @@
+/**
+ * @file button.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -34,6 +39,10 @@ const buttonVariants = cva(
   },
 );
 
+/**
+ * @param props - Attributs natifs `button`, variants `buttonVariants` et `asChild` (Radix Slot).
+ * @returns {JSX.Element} Bouton ou nœud enfant fusionné si `asChild`.
+ */
 function Button({
   className,
   variant,

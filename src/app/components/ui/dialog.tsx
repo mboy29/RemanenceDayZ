@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * @file dialog.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { XIcon } from "lucide-react";

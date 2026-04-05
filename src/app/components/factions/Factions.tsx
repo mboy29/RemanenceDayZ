@@ -1,10 +1,20 @@
-import { motion, useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
+/**
+ * @file Factions.tsx
+ * @description Section page Factions : titre dynamique selon la slide active, carrousel détaillé, note légale.
+ */
+
 import { Section } from '../Section';
+import { useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { FACTIONS_ANCHOR_ID } from './factionsAnchor';
 import { FactionsCarroussel } from './FactionsCarroussel'
 import { factions, type Faction } from './factions.config';
 
+/**
+ * @param isInView - Contrôle les animations d’entrée Framer.
+ * @param current - Faction affichée (couleur de la note / bordure).
+ * @returns {JSX.Element} Encadré note sous le carrousel.
+ */
 function FactionsNote({isInView, current}: {isInView: boolean, current: Faction}) {
   return (
       <motion.div
@@ -28,6 +38,56 @@ function FactionsNote({isInView, current}: {isInView: boolean, current: Faction}
   )
 }
 
+/**
+ * @param isInView - Contrôle les animations d’entrée Framer.
+ * @param current - Faction active (barre verticale colorée).
+ * @returns {JSX.Element} En-tête de section (surtitre + titre).
+ */
+function FactionsTitle({isInView, current}: {isInView: boolean, current: Faction}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: -30 }}
+      animate={isInView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.6 }}
+      className="mb-12"
+    >
+      <div className="mb-3 flex items-center gap-3">
+        <motion.div
+          initial={{ scaleY: 0 }}
+          animate={isInView ? { scaleY: 1 } : {}}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="h-6 w-1 origin-top"
+          style={{ backgroundColor: current.accentColor }}
+        />
+        <span
+          className="uppercase tracking-[0.2em] text-[#746f5c]"
+          style={{
+            fontFamily: "'Roboto Condensed', sans-serif",
+            fontSize: '11px',
+          }}
+        >
+          L'univers STALKER
+        </span>
+      </div>
+      <h2
+        className="tracking-tight text-[#d4cfc4]"
+        style={{
+          fontFamily: "'Teko', sans-serif",
+          fontSize: 'clamp(2rem, 6vw, 4rem)',
+          fontWeight: 600,
+          lineHeight: 1,
+          textTransform: 'uppercase',
+        }}
+      >
+        Les factions du jeu
+      </h2>
+    </motion.div>
+  )
+}
+
+/**
+ * @returns {JSX.Element} `Section` avec carrousel factions et synchronisation d’index pour le titre.
+ */
 export function Factions() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -37,49 +97,9 @@ export function Factions() {
   return (
     <Section id={FACTIONS_ANCHOR_ID} gridBackground={false} bgColor="#0a0a0a">
       <div ref={ref}>
-        <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
-        >
-          <div className="mb-3 flex items-center gap-3">
-            <motion.div
-              initial={{ scaleY: 0 }}
-              animate={isInView ? { scaleY: 1 } : {}}
-              transition={{ duration: 0.4, delay: 0.2 }}
-              className="h-6 w-1 origin-top"
-              style={{ backgroundColor: current.accentColor }}
-            />
-            <span
-              className="uppercase tracking-[0.2em] text-[#746f5c]"
-              style={{
-                fontFamily: "'Roboto Condensed', sans-serif",
-                fontSize: '11px',
-              }}
-            >
-              L'univers STALKER
-            </span>
-          </div>
-          <h2
-            className="tracking-tight text-[#d4cfc4]"
-            style={{
-              fontFamily: "'Teko', sans-serif",
-              fontSize: 'clamp(2rem, 6vw, 4rem)',
-              fontWeight: 600,
-              lineHeight: 1,
-              textTransform: 'uppercase',
-            }}
-          >
-            Les factions du jeu
-          </h2>
-        </motion.div>
-
-        {/* // */}
-        
+        <FactionsTitle isInView={isInView} current={current} />
         <FactionsCarroussel isInView={isInView} onChange={setCurrentIndex} />
         <FactionsNote isInView={isInView} current={current} />
-       
       </div>
     </Section>
   );

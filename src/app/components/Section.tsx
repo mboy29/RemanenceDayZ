@@ -1,14 +1,6 @@
 /**
  * @file Section.tsx
- * @description Section component
- * @description Displays a section with a title, description and children.
- * @returns {React.ReactNode}
- * @param title?: string; (optional)
- * @param description?: string; (optional)
- * @param children: ReactNode; (required)
- * @param gridBackground?: boolean; (optional) default: true
- * @param bgColor?: string; (optional) default: #0a0a0a
- * @param id?: string;
+ * @description Bloc `<section>` réutilisable : en-tête optionnel (titre + ligne d’accroche), grille de fond, conteneur `max-w-6xl`.
  */
 
 import { motion } from 'framer-motion';
@@ -17,8 +9,34 @@ import type { ReactNode } from 'react';
 import { useRef } from 'react';
 import { cn } from './ui/utils';
 
-
-export function Section({ title, description, children, gridBackground = true, bgColor = '#0a0a0a', id }: { title?: string; description?: string; children: ReactNode; gridBackground?: boolean; bgColor?: string; id?: string }) {
+/**
+ * @param title - Titre Teko (optionnel).
+ * @param description - Petite ligne uppercase au-dessus du titre (optionnel).
+ * @param children - Contenu principal sous l’en-tête.
+ * @param gridBackground - Affiche la grille subtile en fond.
+ * @param bgColor - Couleur de fond CSS (hex).
+ * @param id - `id` HTML pour ancres / `scroll-margin`.
+ * @param ariaLabelledBy - `id` d’un titre visible pour `aria-labelledby` sur `<section>`.
+ * @returns {JSX.Element} Section stylée du site.
+ */
+export function Section({
+  title,
+  description,
+  children,
+  gridBackground = true,
+  bgColor = '#0a0a0a',
+  id,
+  ariaLabelledBy,
+}: {
+  title?: string;
+  description?: string;
+  children: ReactNode;
+  gridBackground?: boolean;
+  bgColor?: string;
+  id?: string;
+  /** `id` du titre visible pour le landmark `<section>` (accessibilité). */
+  ariaLabelledBy?: string;
+}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -28,6 +46,7 @@ export function Section({ title, description, children, gridBackground = true, b
     <section
       id={id}
       ref={ref}
+      aria-labelledby={ariaLabelledBy}
       className={cn('relative px-6 py-20', id && 'scroll-mt-[4.75rem]')}
       style={{ backgroundColor: bgColor }}
     >

@@ -1,7 +1,15 @@
+/**
+ * @file Navbar.tsx
+ * @description Barre de navigation fixe : logo (nom serveur) + liens `NavLink` vers les routes déclarées.
+ */
+
 import { Link, NavLink } from 'react-router';
 import { getHomeRoute, getNavRoutes } from '../routes/routes.config';
 import { cn } from './ui/utils';
 
+/**
+ * @returns {JSX.Element} En-tête `<header>` avec `<nav>` principal.
+ */
 export function Navbar() {
   const home = getHomeRoute();
   const navRoutes = getNavRoutes();

@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * @file alert-dialog.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as React from "react";
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
 

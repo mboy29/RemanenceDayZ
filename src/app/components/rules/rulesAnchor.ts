@@ -1,2 +1,7 @@
-/** Ancre pour le scroll depuis le hero des règles vers le contenu (accordéons). */
+/**
+ * @file rulesAnchor.ts
+ * @description Identifiant d’ancre HTML pour le contenu règlement sous le hero.
+ */
+
+/** Valeur de `id` sur la section règles (scroll depuis `RulesHero`). */
 export const RULES_ANCHOR_ID = 'rules-reglement';

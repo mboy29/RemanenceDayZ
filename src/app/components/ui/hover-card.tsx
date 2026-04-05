@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * @file hover-card.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as React from "react";
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
 

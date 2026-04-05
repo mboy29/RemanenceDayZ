@@ -1,9 +1,17 @@
+/**
+ * @file HomeGallery.tsx
+ * @description Section « Field Reports » : grille d’images type rapport visuel avec légendes et animations au survol.
+ */
+
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Section } from '../Section';
 
-export function Gallery() {
+/**
+ * @returns {JSX.Element} Grille de vignettes Unsplash animées (in-view + hover).
+ */
+export function HomeGallery() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);

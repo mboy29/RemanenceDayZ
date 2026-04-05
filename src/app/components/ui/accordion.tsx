@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * @file accordion.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "lucide-react";

@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * @file collapsible.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as CollapsiblePrimitive from "@radix-ui/react-collapsible";
 
 function Collapsible({

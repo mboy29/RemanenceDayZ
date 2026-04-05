@@ -1,5 +1,11 @@
+/**
+ * @file factions.config.ts
+ * @description Données statiques des factions STALKER (textes, médias, couleurs, codes) pour l’UI.
+ */
+
 export type Faction = {
     name: string;
+    code: string;
     accentColor: string;
     emblemUrl: string;
     imageUrl: string;
@@ -12,6 +18,7 @@ export type Faction = {
 export const factions: Faction[] = [
     {
       name: 'Loners',
+      code: 'LON',
       accentColor: '#402C18',
       emblemUrl: '/images/factions/loners/loners_emblem.svg',
       imageUrl: 'https://picsum.photos/seed/remanence-loners-cover/1200/800',
@@ -27,6 +34,7 @@ export const factions: Faction[] = [
     },
     {
       name: 'Duty',
+      code: 'DTY',
       accentColor: '#751617',
       emblemUrl: '/images/factions/duty/duty_emblem.svg',
       imageUrl: 'https://picsum.photos/seed/remanence-duty-cover/1200/800',
@@ -42,6 +50,7 @@ export const factions: Faction[] = [
     },
     {
       name: 'Freedom',
+      code: 'FRD',
       accentColor: '#38b000',
       emblemUrl: '/images/factions/freedom/freedom_emblem.svg',
       imageUrl: 'https://picsum.photos/seed/remanence-freedom-cover/1200/800',
@@ -57,6 +66,7 @@ export const factions: Faction[] = [
     },
     {
       name: 'Bandits',
+      code: 'BND',
       accentColor: '#1a1a1a',
       emblemUrl: '/images/factions/bandits/bandits_emblem.svg',
       imageUrl: 'https://picsum.photos/seed/remanence-bandits-cover/1200/800',
@@ -72,6 +82,7 @@ export const factions: Faction[] = [
     },
     {
       name: 'Ecologists',
+      code: 'ECO',
       accentColor: '#fb5607',
       emblemUrl: '/images/factions/ecologists/ecologists_emblem.svg',
       imageUrl: 'https://picsum.photos/seed/remanence-ecologists-cover/1200/800',
@@ -87,6 +98,7 @@ export const factions: Faction[] = [
     },
     {
       name: 'S.B.U',
+      code: 'SBU',
       accentColor: '#414833',
       emblemUrl: '/images/factions/sbu/sbu_emblem.svg',
       imageUrl: 'https://picsum.photos/seed/remanence-military-cover/1200/800',
@@ -102,6 +114,7 @@ export const factions: Faction[] = [
     },
     {
       name: 'Monolith',
+      code: 'MON',
       accentColor: '#e9ecef',
       emblemUrl: '/images/factions/monolith/monolith_emblem.svg',
       imageUrl: 'https://picsum.photos/seed/remanence-monolith-cover/1200/800',
@@ -117,6 +130,7 @@ export const factions: Faction[] = [
     },
     {
       name: 'Clear Sky',
+      code: 'CSK',
       accentColor: '#2a6f97',
       emblemUrl: '/images/factions/clearsky/clearsky_emblem.svg',
       imageUrl: 'https://picsum.photos/seed/remanence-clear-sky-cover/1200/800',

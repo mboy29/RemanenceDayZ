@@ -1,9 +1,15 @@
+/**
+ * @file FactionsHero.tsx
+ * @description Hero plein écran page Factions : fond immersif, titre, accroche et CTA vers l’ancre contenu factions.
+ */
+
 import { motion } from 'framer-motion';
 import { HeroBackground } from '../HeroSection';
 import { getServerName } from '@/lib/server';
 import { ChevronDown } from 'lucide-react';
 import { FACTIONS_ANCHOR_ID } from './factionsAnchor';
 
+/** Fait défiler la vue jusqu’à l’ancre principale du contenu factions. */
 function scrollToRulesContent() {
   document.getElementById(FACTIONS_ANCHOR_ID)?.scrollIntoView({
     behavior: 'smooth',
@@ -11,6 +17,7 @@ function scrollToRulesContent() {
   });
 }
 
+/** @returns {JSX.Element} Pastille avec le nom du serveur. */
 function HeroServerName() {
   return (
     <motion.div
@@ -26,6 +33,7 @@ function HeroServerName() {
   )
 }
 
+/** @returns {JSX.Element} Titre principal du hero. */
 function HeroTitle() {
   return (
     <motion.h1
@@ -47,6 +55,7 @@ function HeroTitle() {
   )
 }
 
+/** @returns {JSX.Element} Sous-titre explicatif. */
 function HeroSubtitle() {
   return (
     <motion.p
@@ -57,11 +66,12 @@ function HeroSubtitle() {
       style={{ fontFamily: "'Roboto Condensed', sans-serif", fontSize: '15px' }}
     >
       Bienvenue sur notre serveur Rémanence !
-      <br /> Pour garantir une expérience agréable, immersive et équitable à tous, merci de lire attentivement ce règlement et de le respecter. Le non-respect pourra entraîner avertissements, sanctions temporaires ou bannissement définitif.
+      <br /> Pour garantir une expérience agréable, immersive et équitable à tous, merci de lire attentivement ce règlement et de le respecter. Le non-respect pourra entraîner avertissements, sanctions temporaires ou bannissement définitif.
     </motion.p>
   )
 }
 
+/** @returns {JSX.Element} Bouton CTA (scroll vers l’ancre factions). */
 function HeroCTAButton() {
   return (
     <motion.button
@@ -84,6 +94,9 @@ function HeroCTAButton() {
   )
 }
 
+/**
+ * @returns {JSX.Element} Section hero `h-screen` pour la page Factions.
+ */
 export function FactionsHero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">

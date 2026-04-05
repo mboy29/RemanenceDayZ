@@ -1,8 +1,18 @@
+/**
+ * @file PlaceholderPage.tsx
+ * @description Mise en page minimale pour les pages « à venir » (titre + texte optionnel).
+ */
+
 type PlaceholderPageProps = {
   title: string;
   description?: string;
 };
 
+/**
+ * @param title - Titre principal affiché en Teko.
+ * @param description - Paragraphe optionnel sous le titre.
+ * @returns {JSX.Element} Section centrée hauteur partielle.
+ */
 export function PlaceholderPage({ title, description }: PlaceholderPageProps) {
   return (
     <section className="min-h-[60vh] px-6 pt-28 pb-16">

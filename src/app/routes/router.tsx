@@ -1,8 +1,18 @@
+/**
+ * @file router.tsx
+ * @description Construit le `createBrowserRouter` : layout racine + index home + routes enfants depuis `appRouteList`.
+ */
+
 import { createBrowserRouter } from 'react-router';
 import type { RouteObject } from 'react-router';
 import { RootLayout } from '../layouts/RootLayout';
 import { appRouteList } from './routes.config';
 
+/**
+ * @description Transforme `appRouteList` en `RouteObject[]` (index `/` + segments).
+ * @returns Liste des routes enfants du layout racine.
+ * @throws {Error} Si l’entrée `home` est absente.
+ */
 function buildChildren(): RouteObject[] {
   const home = appRouteList.find((r) => r.id === 'home');
   const rest = appRouteList.filter((r) => r.id !== 'home');
@@ -23,6 +33,7 @@ function buildChildren(): RouteObject[] {
   return children;
 }
 
+/** Routeur unique de l’application (monté dans `App.tsx`). */
 export const router = createBrowserRouter([
   {
     path: '/',

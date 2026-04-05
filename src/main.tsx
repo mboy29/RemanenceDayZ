@@ -1,3 +1,8 @@
+/**
+ * @file main.tsx
+ * @description Point d’entrée client : monte l’application React dans `#root` avec `StrictMode`.
+ */
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import "./styles/index.css";

@@ -1,47 +1,28 @@
+/**
+ * @file HomeFeatures.tsx
+ * @description HomeFeatures component
+ * @description Displays the features of the game
+ * @returns {React.ReactNode}
+ * @param None
+ */
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Section } from '../Section';
+import { features } from './features.config';
 
-export function Features() {
+/**
+ * @function HomeFeatures
+ * @description Displays the features of the game on the home page
+ * @returns {React.ReactNode}
+ * @param None
+ */
+export function HomeFeatures() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  const features = [
-    {
-      label: 'Hardcore Survival',
-      description: 'No HUD. No crosshairs. No hand-holding. Every decision matters when resources are scarce and death is permanent.',
-      icon: '01'
-    },
-    {
-      label: 'Faction Warfare',
-      description: 'Join military factions competing for territorial control. Coordinate with your squad or operate as a lone wolf.',
-      icon: '02'
-    },
-    {
-      label: 'Base Operations',
-      description: 'Establish fortified positions, supply caches, and defensive perimeters. Defend what you build or lose it all.',
-      icon: '03'
-    },
-    {
-      label: 'Realistic Combat',
-      description: 'Advanced ballistics system with bullet drop, wind effects, and authentic weapon behavior. Every shot counts.',
-      icon: '04'
-    },
-    {
-      label: 'Dynamic Events',
-      description: 'Helicopter crashes, supply drops, and convoy ambushes create unpredictable hotspots across the map.',
-      icon: '05'
-    },
-    {
-      label: 'Active Community',
-      description: 'Experienced admins, regular events, and a dedicated player base committed to realistic roleplay.',
-      icon: '06'
-    }
-  ];
-
   return (
-    <Section title="Key Features" description="What We Offer" gridBackground={false} bgColor='#0f0f0d'>
+    <Section title="Réalités de la Zone" description="Ce que tu vas affronter" gridBackground={false} bgColor='#0f0f0d'>
       <div ref={ref} className="grid gap-1 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <motion.div

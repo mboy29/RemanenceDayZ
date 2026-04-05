@@ -1,4 +1,9 @@
 /**
+ * @file rules.config.ts
+ * @description Arborescence du règlement (catégories, règles imbriquées, contenu affiché dans `Rules.tsx`).
+ */
+
+/**
  * Nœud de règle : feuille (content) et/ou branche (children = sous-accordéons).
  * Ex. section « 4 » avec children pour 4.1, 4.2, 4.3 ; chaque enfant peut à son tour avoir children (ex. 4.3.1).
  */

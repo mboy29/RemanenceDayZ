@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * @file avatar.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 

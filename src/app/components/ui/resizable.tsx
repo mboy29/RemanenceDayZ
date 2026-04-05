@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * @file resizable.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as React from "react";
 import { GripVerticalIcon } from "lucide-react";
 import * as ResizablePrimitive from "react-resizable-panels";

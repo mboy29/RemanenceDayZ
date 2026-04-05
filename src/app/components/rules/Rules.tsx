@@ -1,3 +1,8 @@
+/**
+ * @file Rules.tsx
+ * @description Section règlement : avertissement, accordéon hiérarchique à partir de `rulesData`, ancre `RULES_ANCHOR_ID`.
+ */
+
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import type { ReactNode } from 'react';
@@ -34,10 +39,18 @@ type RulesAccordionProps = {
   onToggleKey: (key: string) => void;
 };
 
+/**
+ * @param parts - Indices du chemin dans l’arbre (catégorie, règle, sous-règle…).
+ * @returns {string} Clé stable pour l’état ouvert/fermé (`Set`).
+ */
 function pathKey(parts: number[]): string {
   return parts.join('-');
 }
 
+/**
+ * @param isInView - Contrôle l’animation d’entrée.
+ * @returns {JSX.Element} Encadré d’avertissement modération.
+ */
 function RulesWarning({ isInView }: { isInView: boolean }) {
   return (
     <motion.div
@@ -78,6 +91,10 @@ function RulesWarning({ isInView }: { isInView: boolean }) {
   );
 }
 
+/**
+ * @param isOpen - Anime la barre supérieure quand le panneau est ouvert.
+ * @returns {JSX.Element} Ligne d’accent et coins décoratifs.
+ */
 function RulesAccordionFrameDecor({ isOpen }: { isOpen: boolean }) {
   return (
     <>
@@ -93,6 +110,14 @@ function RulesAccordionFrameDecor({ isOpen }: { isOpen: boolean }) {
   );
 }
 
+/**
+ * @param icon - Icône catégorie ou chevron selon la profondeur.
+ * @param title - Titre du nœud.
+ * @param isOpen - État ouvert.
+ * @param onToggle - Bascule l’état.
+ * @param depth - `0` = racine (padding / typo différents).
+ * @returns {JSX.Element} Bouton en-tête d’accordéon.
+ */
 function RulesAccordionTrigger({
   icon,
   title,
@@ -152,6 +177,11 @@ function RulesAccordionTrigger({
   );
 }
 
+/**
+ * @param items - Puces de texte.
+ * @param compact - Typo plus petite pour les niveaux imbriqués.
+ * @returns {JSX.Element} Liste `<ul>` animée.
+ */
 function RulesAccordionBulletList({ items, compact }: { items: string[]; compact?: boolean }) {
   return (
     <motion.ul
@@ -182,6 +212,17 @@ function RulesAccordionBulletList({ items, compact }: { items: string[]; compact
   );
 }
 
+/**
+ * @param rule - Nœud courant (titre, contenu, enfants).
+ * @param pathParts - Chemin d’indices pour `pathKey`.
+ * @param categoryIcon - Icône Lucide de la catégorie racine.
+ * @param categoryIndex - Délai d’animation des racines.
+ * @param depth - Profondeur dans l’arbre.
+ * @param isInView - Animation racine.
+ * @param openKeys - Clés des panneaux ouverts.
+ * @param onToggleKey - Bascule une clé dans `openKeys`.
+ * @returns {JSX.Element} Bloc accordéon récursif.
+ */
 function RulesAccordionNode({
   rule,
   pathParts,
@@ -268,6 +309,12 @@ function RulesAccordionNode({
   );
 }
 
+/**
+ * @param isInView - Passé aux nœuds racine pour l’animation.
+ * @param openKeys - État ouvert partagé.
+ * @param onToggleKey - Callback de bascule.
+ * @returns {JSX.Element} Liste des catégories et règles racines.
+ */
 function RulesAccordion({ isInView, openKeys, onToggleKey }: RulesAccordionProps) {
   return (
     <div className="space-y-3">
@@ -292,11 +339,15 @@ function RulesAccordion({ isInView, openKeys, onToggleKey }: RulesAccordionProps
   );
 }
 
+/**
+ * @returns {JSX.Element} Section complète du règlement avec grille de fond.
+ */
 export function Rules() {
   const ref = useRef(null);
   const isInView: boolean = useInView(ref, { once: true, margin: '-100px' });
   const [openKeys, setOpenKeys] = useState<Set<string>>(() => new Set());
 
+  /** Ajoute ou retire `key` de l’ensemble des panneaux ouverts. */
   const toggleKey = (key: string) => {
     setOpenKeys((prev) => {
       const next = new Set(prev);

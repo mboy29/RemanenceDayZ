@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * @file radio-group.tsx
+ * @description Primitives et patterns UI (shadcn/ui) — le typage des props complète la doc.
+ */
+
 import * as React from "react";
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
 import { CircleIcon } from "lucide-react";

@@ -8,7 +8,12 @@
 
 import { motion } from 'framer-motion'
 import { HeroBackground } from '../HeroSection';
-import { getServerName, getServerAddress, isOnline, getActivePlayers, getServerState } from '@/lib/server';
+import { DiscordButton } from '../DiscordButton';
+import { getServerName, getServerAddress, isOnline, getActivePlayers, getServerState, getDiscordInviteUrl } from '@/lib/server';
+
+/** Classes de base communes au CTA Discord (hero), alignées sur le footer. */
+const HERO_DISCORD_CTA_BASE =
+  'group relative inline-flex items-center justify-center overflow-hidden border px-10 py-4 transition-all duration-300';
 
 /** 
   * HeroServerName component
@@ -134,30 +139,6 @@ function HeroServerStatus() {
   )
 }
 
-/**
-  * HeroCTAButton component
-  * @description Displays the CTA button.
-  * @returns {React.ReactNode}
-  * @param none
-  */
-function HeroCTAButton() {
-  return (
-      <motion.button
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, delay: 1 }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.98 }}
-      className="group relative px-8 py-3 border border-[#746f5c]/40 bg-[#1a1a16]/60 backdrop-blur-sm hover:bg-[#4a5228]/20 transition-all duration-300 overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#4a5228]/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-      <span className="relative text-[#d4cfc4] tracking-[0.15em] uppercase" style={{ fontFamily: "'Roboto Condensed', sans-serif", fontSize: '13px', fontWeight: 600 }}>
-        Rejoins le serveur maintenant
-      </span>
-    </motion.button>
-  )
-}
-
 /**  
   * HomeHero component
   * @description Displays the server name, title, subtitle, server status, connection info and CTA button.
@@ -173,7 +154,7 @@ export function HomeHero() {
         <HeroTitle />
         <HeroSubtitle />
         <HeroServerStatus />
-        <HeroCTAButton />
+        <DiscordButton />
         <HeroConnectionInfo />
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0a] to-transparent z-5"></div>

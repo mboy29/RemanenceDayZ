@@ -1,3 +1,8 @@
+/**
+ * @file ruleCategoryIcons.tsx
+ * @description Mapping des identifiants de catégorie de règles vers des icônes Lucide pour l’accordéon.
+ */
+
 import type { LucideIcon } from 'lucide-react';
 import {
   Ban,
@@ -36,6 +41,13 @@ type RuleCategoryIconProps = {
   strokeWidth?: number;
 };
 
+/**
+ * @param id - Clé d’icône définie dans `rules.config`.
+ * @param className - Classes CSS additionnelles.
+ * @param size - Taille du pictogramme (px).
+ * @param strokeWidth - Épaisseur du trait.
+ * @returns {JSX.Element} Icône Lucide décorative (`aria-hidden`).
+ */
 export function RuleCategoryIcon({
   id,
   className,
