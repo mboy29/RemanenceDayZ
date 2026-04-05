@@ -1,6 +1,5 @@
 export type Faction = {
     name: string;
-    code: string;
     accentColor: string;
     emblemUrl: string;
     imageUrl: string;
@@ -8,169 +7,127 @@ export type Faction = {
     values: string[];
     nbMembers?: number | null;
     status?: 'active' | 'inactive' | 'open' | null;
-  };
-  
+};
+
 export const factions: Faction[] = [
     {
-        name: 'Loners',
-        code: 'LON',
-        accentColor: '#8C7B5A',
-        // emblemUrl: '/images/factions/loners/emblem.png',
-        // imageUrl: '/images/factions/loners/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-loners-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-loners-cover/1200/800',
-        description:
-        'Des survivants indépendants, guidés par l’instinct, l’opportunisme et la débrouille. Ils forment la colonne vertébrale de la Zone, sans réel commandement central.',
-        values: [
-        'Vivre librement dans la Zone, sans chaîne ni hiérarchie imposée.',
-        'Survivre grâce à l’expérience, l’échange et l’adaptation constante.',
-        'Faire passer l’instinct et la débrouille avant les grandes idéologies.'
-        ],
-        nbMembers: null,
-        status: null
+      name: 'Loners',
+      accentColor: '#402C18',
+      emblemUrl: '/images/factions/loners/loners_emblem.svg',
+      imageUrl: 'https://picsum.photos/seed/remanence-loners-cover/1200/800',
+      description:
+        "Ici, personne ne te doit rien. Tu avances avec ce que tu portes, ce que tu sais faire et ce que la Zone accepte encore de te laisser.",
+      values: [
+        "Compter d’abord sur soi-même, car la Zone n’offre aucune seconde chance.",
+        "Survivre par l’instinct, la débrouille et l’expérience du terrain.",
+        "Rester libre, loin des ordres, des dogmes et des chaînes des autres factions."
+      ],
+      nbMembers: null,
+      status: null
     },
     {
-        name: 'Duty',
-        code: 'DTY',
-        accentColor: '#A63D2E',
-        // emblemUrl: '/images/factions/duty/emblem.png',
-        // imageUrl: '/images/factions/duty/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-duty-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-duty-cover/1200/800',
-        description:
-        'Faction paramilitaire disciplinée qui considère la Zone comme une menace à contenir, voire à détruire. Ordre, contrôle et sacrifice définissent leur ligne.',
-        values: [
-        'Contenir la propagation de la Zone par tous les moyens nécessaires.',
-        'Maintenir une discipline stricte et une chaîne de commandement claire.',
-        'Faire passer la sécurité collective avant les intérêts individuels.'
-        ],
-        nbMembers: null,
-        status: null
+      name: 'Duty',
+      accentColor: '#751617',
+      emblemUrl: '/images/factions/duty/duty_emblem.svg',
+      imageUrl: 'https://picsum.photos/seed/remanence-duty-cover/1200/800',
+      description:
+        "La Zone n’est pas un refuge. C’est une plaie ouverte. Tant qu’elle respire, le monde extérieur reste en danger. Nous sommes là pour contenir ce fléau.",
+      values: [
+        "Faire passer la discipline et la mission avant toute considération personnelle.",
+        "Combattre sans relâche tout ce qui menace d’étendre l’influence de la Zone.",
+        "Maintenir l’ordre là où le chaos cherche sans cesse à reprendre le dessus."
+      ],
+      nbMembers: null,
+      status: null
     },
     {
-        name: 'Freedom',
-        code: 'FRD',
-        accentColor: '#4F6B3C',
-        // emblemUrl: '/images/factions/freedom/emblem.png',
-        // imageUrl: '/images/factions/freedom/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-freedom-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-freedom-cover/1200/800',
-        description:
-        'Faction libertaire persuadée que la Zone ne doit pas être verrouillée par l’armée ou par des structures autoritaires. Plus souples, mais loin d’être inoffensifs.',
-        values: [
-        'Refuser toute forme de contrôle militaire ou politique sur la Zone.',
-        'Défendre une vision plus libre, plus ouverte et plus organique du territoire.',
-        'Préserver l’autonomie des stalkers face aux forces d’oppression.'
-        ],
-        nbMembers: null,
-        status: null
+      name: 'Freedom',
+      accentColor: '#38b000',
+      emblemUrl: '/images/factions/freedom/freedom_emblem.svg',
+      imageUrl: 'https://picsum.photos/seed/remanence-freedom-cover/1200/800',
+      description:
+        "La Zone n’appartient ni aux militaires, ni aux fanatiques, ni aux bureaucrates. Elle est sauvage, instable, vivante… et personne ne devrait prétendre la posséder.",
+      values: [
+        "Refuser toute domination militaire ou politique sur la Zone et ses survivants.",
+        "Défendre une existence plus libre, plus brute et plus authentique au cœur du danger.",
+        "Préserver l’autonomie de ceux qui veulent vivre sans maître ni laisse."
+      ],
+      nbMembers: null,
+      status: null
     },
     {
-        name: 'Bandits',
-        code: 'BND',
-        accentColor: '#5E4A2F',
-        // emblemUrl: '/images/factions/bandits/emblem.png',
-        // imageUrl: '/images/factions/bandits/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-bandits-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-bandits-cover/1200/800',
-        description:
-        'Criminels, pillards et opportunistes vivant au bord du chaos. Ils prospèrent sur l’intimidation, l’embuscade et la loi du plus fort.',
-        values: [
-        'Prendre ce qui peut être pris, sans attendre qu’on l’accorde.',
-        'Exploiter la peur, la violence et la confusion pour survivre.',
-        'Faire primer le profit immédiat sur toute loyauté durable.'
-        ],
-        nbMembers: null,
-        status: null
+      name: 'Bandits',
+      accentColor: '#1a1a1a',
+      emblemUrl: '/images/factions/bandits/bandits_emblem.svg',
+      imageUrl: 'https://picsum.photos/seed/remanence-bandits-cover/1200/800',
+      description:
+        "Ici, les faibles se font dépouiller, les naïfs se font enterrer, et les hésitants ne durent pas longtemps. Dans la Zone, tout a un prix… surtout la peur.",
+      values: [
+        "Prendre ce qui peut l’être avant qu’un autre ne s’en empare.",
+        "Utiliser la menace, la violence et l’embuscade comme des outils de survie.",
+        "Faire du profit immédiat la seule vraie loi qui mérite d’être respectée."
+      ],
+      nbMembers: null,
+      status: null
     },
     {
-        name: 'Mercenaries',
-        code: 'MER',
-        accentColor: '#4A6580',
-        // emblemUrl: '/images/factions/mercenaries/emblem.png',
-        // imageUrl: '/images/factions/mercenaries/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-mercenaries-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-mercenaries-cover/1200/800',
-        description:
-        'Professionnels armés opérant pour l’argent, les contrats et des intérêts souvent opaques. Méthodiques, efficaces, rarement attachés à une cause.',
-        values: [
-        'Accomplir la mission avec efficacité, discrétion et sang-froid.',
-        'Faire passer l’objectif contractuel avant les considérations idéologiques.',
-        'Valoriser la compétence, la préparation et la précision tactique.'
-        ],
-        nbMembers: null,
-        status: null
+      name: 'Ecologists',
+      accentColor: '#fb5607',
+      emblemUrl: '/images/factions/ecologists/ecologists_emblem.svg',
+      imageUrl: 'https://picsum.photos/seed/remanence-ecologists-cover/1200/800',
+      description:
+        "Là où d’autres ne voient qu’un cauchemar, nous voyons un phénomène à comprendre. Chaque anomalie, chaque artefact, chaque émission raconte quelque chose de plus grand.",
+      values: [
+        "Étudier la Zone avec rigueur pour percer ses mécanismes les plus dangereux.",
+        "Préserver les observations, les données et les découvertes avant toute autre priorité.",
+        "Faire progresser la connaissance, même lorsque le terrain exige du sang et du courage."
+      ],
+      nbMembers: null,
+      status: null
     },
     {
-        name: 'Ecologists',
-        code: 'ECO',
-        accentColor: '#D18C2F',
-        // emblemUrl: '/images/factions/ecologists/emblem.png',
-        // imageUrl: '/images/factions/ecologists/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-ecologists-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-ecologists-cover/1200/800',
-        description:
-        'Scientifiques et chercheurs venus étudier la Zone, ses anomalies et ses artefacts. Leur présence repose sur la connaissance plus que sur la domination.',
-        values: [
-        'Étudier la Zone pour mieux comprendre ses phénomènes uniques.',
-        'Faire progresser la recherche malgré les risques du terrain.',
-        'Préserver les données, les découvertes et les échantillons avant tout.'
-        ],
-        nbMembers: null,
-        status: null
+      name: 'S.B.U',
+      accentColor: '#414833',
+      emblemUrl: '/images/factions/sbu/sbu_emblem.svg',
+      imageUrl: 'https://picsum.photos/seed/remanence-military-cover/1200/800',
+      description:
+        "La Zone est sous surveillance. Chaque passage, chaque mouvement, chaque intrusion est observé. Ceux qui refusent l’autorité choisissent eux-mêmes ce qui leur arrivera.",
+      values: [
+        "Contrôler le territoire avec fermeté et faire respecter les ordres sans discussion.",
+        "Neutraliser toute menace capable de compromettre la stabilité des opérations.",
+        "Empêcher la propagation du danger au-delà du périmètre autorisé."
+      ],
+      nbMembers: null,
+      status: null
     },
     {
-        name: 'Military',
-        code: 'MIL',
-        accentColor: '#556B2F',
-        // emblemUrl: '/images/factions/military/emblem.png',
-        // imageUrl: '/images/factions/military/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-military-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-military-cover/1200/800',
-        description:
-        'Forces armées officielles chargées de surveiller, contenir et verrouiller l’accès à la Zone. Leur présence repose sur l’autorité, la force et le contrôle territorial.',
-        values: [
-        'Contrôler les accès et maintenir l’ordre par la force si nécessaire.',
-        'Faire respecter la chaîne de commandement et les protocoles militaires.',
-        'Empêcher toute menace extérieure ou intérieure de se propager.'
-        ],
-        nbMembers: null,
-        status: null
+      name: 'Monolith',
+      accentColor: '#e9ecef',
+      emblemUrl: '/images/factions/monolith/monolith_emblem.svg',
+      imageUrl: 'https://picsum.photos/seed/remanence-monolith-cover/1200/800',
+      description:
+        "Le cœur de la Zone ne se révèle pas aux impurs. Nous avons entendu son appel, accepté sa vérité et abandonné ce que les autres appellent encore leur volonté.",
+      values: [
+        "Protéger les secrets du centre contre toute présence étrangère ou profane.",
+        "Suivre une foi absolue, sans doute, sans peur et sans compromis.",
+        "Offrir chaque sacrifice nécessaire à la préservation de la volonté du Monolithe."
+      ],
+      nbMembers: null,
+      status: null
     },
     {
-        name: 'Monolith',
-        code: 'MON',
-        accentColor: '#CFCFC7',
-        // emblemUrl: '/images/factions/monolith/emblem.png',
-        // imageUrl: '/images/factions/monolith/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-monolith-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-monolith-cover/1200/800',
-        description:
-        'Fanatiques dévoués au cœur de la Zone, redoutés pour leur radicalité et leur loyauté absolue. Ils incarnent une menace aussi mystique que militaire.',
-        values: [
-        'Protéger la Zone et ses secrets contre toute intrusion extérieure.',
-        'Suivre une foi absolue sans remise en question ni compromis.',
-        'Sacrifier l’individu au profit d’une mission perçue comme sacrée.'
-        ],
-        nbMembers: null,
-        status: null
-    },
-    {
-        name: 'Clear Sky',
-        code: 'CSK',
-        accentColor: '#6E8FA3',
-        // emblemUrl: '/images/factions/clear-sky/emblem.png',
-        // imageUrl: '/images/factions/clear-sky/cover.jpg',
-        emblemUrl: 'https://picsum.photos/seed/remanence-clear-sky-emblem/400/400',
-        imageUrl: 'https://picsum.photos/seed/remanence-clear-sky-cover/1200/800',
-        description:
-        'Faction secrète tournée vers l’étude de la Zone et de ses mécanismes profonds. Plus discrète que d’autres groupes, elle agit avec méthode et retenue.',
-        values: [
-        'Chercher à comprendre les équilibres profonds de la Zone.',
-        'Agir avec prudence, méthode et recul face aux phénomènes anormaux.',
-        'Préserver un savoir rare que peu sont capables d’interpréter.'
-        ],
-        nbMembers: null,
-        status: null
+      name: 'Clear Sky',
+      accentColor: '#2a6f97',
+      emblemUrl: '/images/factions/clearsky/clearsky_emblem.svg',
+      imageUrl: 'https://picsum.photos/seed/remanence-clear-sky-cover/1200/800',
+      description:
+        "La plupart regardent la Zone sans la comprendre. Nous observons ses cycles, ses fractures, ses réponses. Là où les autres voient du hasard, nous cherchons un ordre caché.",
+      values: [
+        "Étudier les équilibres invisibles qui gouvernent les mutations de la Zone.",
+        "Agir avec méthode, retenue et précision face à l’inconnu.",
+        "Préserver un savoir fragile que trop peu sont encore capables de saisir."
+      ],
+      nbMembers: null,
+      status: null
     }
 ];

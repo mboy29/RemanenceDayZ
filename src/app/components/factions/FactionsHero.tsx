@@ -77,7 +77,7 @@ function HeroCTAButton() {
     >
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#4a5228]/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
       <span className="flex flex-row items-center gap-2 relative text-[#d4cfc4] tracking-[0.15em] uppercase" style={{ fontFamily: "'Roboto Condensed', sans-serif", fontSize: '13px', fontWeight: 600 }}>
-        Lire le règlement
+        Rejoins une faction
         <ChevronDown size={20} />
       </span>
     </motion.button>
