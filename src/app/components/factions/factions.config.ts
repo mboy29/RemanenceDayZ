@@ -21,7 +21,7 @@ export const factions: Faction[] = [
       code: 'LON',
       accentColor: '#402C18',
       emblemUrl: '/images/factions/loners/loners_emblem.svg',
-      imageUrl: 'https://picsum.photos/seed/remanence-loners-cover/1200/800',
+      imageUrl: '/images/factions/loners/loners_image.png',
       description:
         "Ici, personne ne te doit rien. Tu avances avec ce que tu portes, ce que tu sais faire et ce que la Zone accepte encore de te laisser.",
       values: [
@@ -37,7 +37,7 @@ export const factions: Faction[] = [
       code: 'DTY',
       accentColor: '#751617',
       emblemUrl: '/images/factions/duty/duty_emblem.svg',
-      imageUrl: 'https://picsum.photos/seed/remanence-duty-cover/1200/800',
+      imageUrl: '/images/factions/duty/duty_image.png',
       description:
         "La Zone n’est pas un refuge. C’est une plaie ouverte. Tant qu’elle respire, le monde extérieur reste en danger. Nous sommes là pour contenir ce fléau.",
       values: [
@@ -53,7 +53,7 @@ export const factions: Faction[] = [
       code: 'FRD',
       accentColor: '#38b000',
       emblemUrl: '/images/factions/freedom/freedom_emblem.svg',
-      imageUrl: 'https://picsum.photos/seed/remanence-freedom-cover/1200/800',
+      imageUrl: '/images/factions/freedom/freedom_images.jpg',
       description:
         "La Zone n’appartient ni aux militaires, ni aux fanatiques, ni aux bureaucrates. Elle est sauvage, instable, vivante… et personne ne devrait prétendre la posséder.",
       values: [
@@ -69,7 +69,7 @@ export const factions: Faction[] = [
       code: 'BND',
       accentColor: '#1a1a1a',
       emblemUrl: '/images/factions/bandits/bandits_emblem.svg',
-      imageUrl: 'https://picsum.photos/seed/remanence-bandits-cover/1200/800',
+      imageUrl: '/images/factions/bandits/bandits_image.png',
       description:
         "Ici, les faibles se font dépouiller, les naïfs se font enterrer, et les hésitants ne durent pas longtemps. Dans la Zone, tout a un prix… surtout la peur.",
       values: [
@@ -85,7 +85,7 @@ export const factions: Faction[] = [
       code: 'ECO',
       accentColor: '#fb5607',
       emblemUrl: '/images/factions/ecologists/ecologists_emblem.svg',
-      imageUrl: 'https://picsum.photos/seed/remanence-ecologists-cover/1200/800',
+      imageUrl: '/images/factions/ecologists/ecologists_image.png',
       description:
         "Là où d’autres ne voient qu’un cauchemar, nous voyons un phénomène à comprendre. Chaque anomalie, chaque artefact, chaque émission raconte quelque chose de plus grand.",
       values: [
@@ -101,7 +101,7 @@ export const factions: Faction[] = [
       code: 'SBU',
       accentColor: '#414833',
       emblemUrl: '/images/factions/sbu/sbu_emblem.svg',
-      imageUrl: 'https://picsum.photos/seed/remanence-military-cover/1200/800',
+      imageUrl: '/images/factions/sbu/sbu_image.png',
       description:
         "La Zone est sous surveillance. Chaque passage, chaque mouvement, chaque intrusion est observé. Ceux qui refusent l’autorité choisissent eux-mêmes ce qui leur arrivera.",
       values: [
@@ -117,7 +117,7 @@ export const factions: Faction[] = [
       code: 'MON',
       accentColor: '#e9ecef',
       emblemUrl: '/images/factions/monolith/monolith_emblem.svg',
-      imageUrl: 'https://picsum.photos/seed/remanence-monolith-cover/1200/800',
+      imageUrl: '/images/factions/monolith/monolith_image.png',
       description:
         "Le cœur de la Zone ne se révèle pas aux impurs. Nous avons entendu son appel, accepté sa vérité et abandonné ce que les autres appellent encore leur volonté.",
       values: [
@@ -133,7 +133,7 @@ export const factions: Faction[] = [
       code: 'CSK',
       accentColor: '#2a6f97',
       emblemUrl: '/images/factions/clearsky/clearsky_emblem.svg',
-      imageUrl: 'https://picsum.photos/seed/remanence-clear-sky-cover/1200/800',
+      imageUrl: '/images/factions/clearsky/clearsky_image.png',
       description:
         "La plupart regardent la Zone sans la comprendre. Nous observons ses cycles, ses fractures, ses réponses. Là où les autres voient du hasard, nous cherchons un ordre caché.",
       values: [
