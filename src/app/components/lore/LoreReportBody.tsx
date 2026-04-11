@@ -234,7 +234,7 @@ export function LoreAnnexVisual() {
         className="border-t border-[#746f5c]/20 bg-[#0a0a0a]/80 px-4 py-3 text-[11px] uppercase tracking-[0.18em] text-[#746f5c]"
         style={{ fontFamily: LORE_BODY_FONT }}
       >
-        Fig. 08 — Images restaurées de la Zone
+        Fig. XX — Images restaurées de la Zone
       </figcaption>
     </motion.figure>
   );
