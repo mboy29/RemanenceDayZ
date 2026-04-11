@@ -5,6 +5,7 @@
 
 import { Factions } from '../components/factions/Factions';
 import { FactionsHero } from '../components/factions/FactionsHero';
+import { Footer } from '../components/Footer';
 
 /**
  * @returns {JSX.Element} Vue factions du serveur.
@@ -15,6 +16,7 @@ export function FactionsPage() {
     <>
       <FactionsHero />
       <Factions />
+      <Footer />
     </>
   );
 }

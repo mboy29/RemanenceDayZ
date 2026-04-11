@@ -78,8 +78,9 @@ function HeroSubtitle() {
       className="text-[#8a8777] max-w-2xl mx-auto mb-8 leading-relaxed"
       style={{ fontFamily: "'Roboto Condensed', sans-serif", fontSize: '15px' }}
     >
-      Serveur français pur, sans limite de joueurs.
-      <br />Aucune règle. Aucune pitié. Seulement la survie.
+      Serveur francophone STALKER.
+      <br />
+      Pas d’aide. Pas de raccourcis. Seulement un terrain exigeant et des choix à assumer.
     </motion.p>
   )
 }

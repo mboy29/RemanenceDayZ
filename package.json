@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "carousel:sync": "node scripts/sync-lore-carousel-manifest.mjs",
+    "prebuild": "node scripts/sync-lore-carousel-manifest.mjs",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

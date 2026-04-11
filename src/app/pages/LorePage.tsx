@@ -1,13 +1,21 @@
 /**
  * @file LorePage.tsx
- * @description Page Lore (placeholder jusqu’au contenu réel).
+ * @description Page Lore : hero immersif puis dossier classifié (contenu `lore.config`).
  */
 
-import { PlaceholderPage } from './PlaceholderPage';
+import { Lore } from '../components/lore/Lore';
+import { LoreHero } from '../components/lore/LoreHero';
+import { Footer } from '../components/Footer';
 
 /**
- * @returns {JSX.Element} Placeholder titre « Lore ».
+ * @returns {JSX.Element} Vue lore du serveur.
  */
 export function LorePage() {
-  return <PlaceholderPage title="Lore" />;
+  return (
+    <>
+      <LoreHero />
+      <Lore />
+      <Footer />
+    </>
+  );
 }
