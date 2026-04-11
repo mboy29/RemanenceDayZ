@@ -9,7 +9,7 @@ const FALLBACK_IMAGES = [
   '/images/lore/carroussel/item3.jpeg',
 ];
 
-const INTERVAL_MS = 6000;
+const INTERVAL_MS = 10000;
 
 type Manifest = { images: string[] };
 
