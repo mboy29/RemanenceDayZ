@@ -1,10 +1,11 @@
 /**
  * @file HomePage.tsx
- * @description Page d’accueil : enchaîne hero, brief, features, factions et pied de page.
+ * @description Page d’accueil : enchaîne hero, brief, lore, features, factions et pied de page.
  */
 
 import { HomeHero } from '../components/home/HomeHero';
 import { HomeBrief } from '../components/home/HomeBrief';
+import { HomeLore } from '../components/home/HomeLore';
 import { HomeFeatures } from '../components/home/HomeFeatures';
 import { HomeFactions } from '../components/home/HomeFactions';
 // import { HomeGallery } from '../components/home/HomeGallery';
@@ -19,6 +20,7 @@ export function HomePage() {
       <HomeHero />
       <HomeBrief />
       <HomeFeatures />
+      <HomeLore />
       <HomeFactions />
       {/* <HomeGallery /> */}
       <Footer />

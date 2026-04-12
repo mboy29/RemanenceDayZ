@@ -324,7 +324,8 @@ export function HomeFactions() {
   }
 
   return (
-    <Section title="Factions de la Zone" description="Les factions de la Zone" ariaLabelledBy="home-factions-heading">
+    <Section title="Factions de la Zone" description="Les factions de la Zone" ariaLabelledBy="home-factions-heading" 
+      bgColor="#0f0f0d">
       <div ref={ref}>
         {/* <HomeFactionsHeader isInView={isInView} /> */}
 
