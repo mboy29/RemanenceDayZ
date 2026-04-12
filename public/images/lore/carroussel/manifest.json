@@ -1,7 +1,9 @@
 {
   "images": [
-    "/images/lore/carroussel/item1.jpeg",
-    "/images/lore/carroussel/item2.jpeg",
-    "/images/lore/carroussel/item3.jpeg"
-  ]
+    "/images/lore/carroussel/item01.jpg",
+    "/images/lore/carroussel/item02.jpg",
+    "/images/lore/carroussel/item03.jpeg",
+    "/images/lore/carroussel/item04.jpg",
+    "/images/lore/carroussel/item05.jpg",
+    "/images/lore/carroussel/item06.jpeg"  ]
 }
