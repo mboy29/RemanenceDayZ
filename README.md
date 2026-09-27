@@ -59,6 +59,5 @@ Routes principales déclarées dans `routes.config.ts` :
 
 Après `npm run build`, déployez le dossier **`dist/`** sur l’hébergement statique de votre choix (Netlify, Vercel, Nginx, etc.). Pour les apps en **SPA** avec React Router, configurez une **fallback** vers `index.html` pour les chemins profonds (ex. `/regles`).
 
-## Licence
-
-Projet privé (`"private": true` dans `package.json`). Adapter selon votre politique.
+> This repository is a public portfolio version of a collaborative project
+> whose original repository is privately maintained.
